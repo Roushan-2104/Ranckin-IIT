@@ -1,38 +1,575 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap");
+
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b5c2c7;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bfc9ca;
+}
+body {
+  overflow-x: hidden;
+}
+/* NAVBAR */
+.nav {
+  min-height: 70px;
+}
+.logo {
+  transition: opacity 0.2s;
+}
+.logo:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.links:hover {
+  border-bottom: 2px solid black;
+}
+.links:active {
+  border-bottom: 2px solid black;
+}
+.log {
+  transition: opacity 0.2s;
+}
+.log:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+/* Home */
+
+.para {
+  font-weight: 400;
+  font-size: 42px;
+}
+.ranckin-titl {
+  color: #536eb7;
+  font-weight: 500;
+  font-family: serif;
+  height: 110px;
+  opacity: 0.95;
+}
+.ranckin-para {
+  font-family: serif;
+  font-size: 15px;
+}
+.mentorship-titl {
+  font-size: 32px;
+}
+.aim-titl {
+  font-size: 32px;
+}
+.gift {
+  width: 50%;
+}
+.tel {
+  background-color: rgba(255, 179, 17, 0.4);
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  transition: background-color 0.2s;
+}
+.tel:hover {
+  background-color: rgba(255, 179, 17, 0.6);
+  color: black;
+  transition: 0.2s;
+}
+.gift {
+  width: 35%;
+}
+.atoz {
+  width: 30%;
+}
+.label-free {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.input button {
+  padding: 8px 10px 8px 10px;
+  margin-top: 16px;
+  color: white;
+  margin-left: 30px;
+  font-weight: 500;
+  border: 2px solid #fe6060;
+  background-color: #fe6060;
+}
+.input button:hover {
+  background-color: #fe6060;
+}
+.email-input {
+  border: 2px solid #fe6060;
+  width: 120%;
+}
+.email-input:focus {
+  outline: 0;
+}
+.email-input::placeholder {
+  color: #fe6060;
+  font-weight: bold;
+}
+.third-title {
+  color: #2b6ca3;
+  font-family: "Kaushan Script", cursive;
+  margin-top: 32px;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: italic;
+}
+.third-box {
+  position: relative;
+}
+.third-box-titl {
+  top: 30px;
+  margin: 12px;
+  position: absolute;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+}
+.services {
+  background-color: rgb(177, 211, 187);
+}
+.services-area div:nth-of-type(1) {
+  justify-content: flex-start;
+}
+.service-head {
+  border: 6px solid rgb(123, 115, 111);
+}
+.service-titl {
+  font-family: "Signika", sans-serif;
+  border-bottom: 4px solid black;
+  margin-bottom: 10px;
+}
+.all-service {
+  transition: all 0.5s;
+}
+.all-service:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.first-service {
+  width: 15rem;
+  background-image: url("https://static.wixstatic.com/media/cf1f13_37812fedb9494a10b9b700058a52d98f~mv2.jpg/v1/crop/x_917,y_0,w_5895,h_7730/fill/w_241,h_316,al_c,q_80,usm_0.66_1.00_0.01/chosebfy.webp");
+}
+.second-service {
+  width: 15rem;
+  background-image: url("https://static.wixstatic.com/media/cf1f13_37812fedb9494a10b9b700058a52d98f~mv2.jpg/v1/crop/x_917,y_0,w_5895,h_7730/fill/w_241,h_316,al_c,q_80,usm_0.66_1.00_0.01/chosebfy.webp");
+}
+.third-service {
+  width: 15rem;
+  background-image: url("https://static.wixstatic.com/media/cf1f13_37812fedb9494a10b9b700058a52d98f~mv2.jpg/v1/crop/x_917,y_0,w_5895,h_7730/fill/w_241,h_316,al_c,q_80,usm_0.66_1.00_0.01/chosebfy.webp");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hover-content {
+  background-color: #ffde5f;
+}
+.hover-content p:nth-of-type(1) {
+  border-bottom: 4px solid black;
+  font-family: "IM Fell French Canon", serif;
+  font-weight: bold;
+}
+.hover-content p:nth-of-type(2) {
+  font-size: 14.5px;
+  letter-spacing: 0.3px;
+  font-family: "Quicksand", sans-serif;
+}
+.social {
+  color: black;
+  transition: all 0.1s;
+}
+.social:hover {
+  color: #056abd;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
+}
+.initiative-titl {
+  font-family: "Signika", sans-serif;
+}
+.youthkaksha {
+  font-weight: 500;
+  color: #0084c1;
+  background-color: #aae7c0;
+  border-radius: 4px;
+}
+.triangle {
+  left: 2%;
+  bottom: 0;
+  color: #aae7c0;
+}
+.youthkaksha-titl {
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+}
+.youthkaksha-quote {
+  line-height: 35px;
+  font-weight: 700;
+}
+.time,
+.time-2 {
+  top: 38%;
+  left: 0;
+  letter-spacing: 3px;
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-bottom: 11px;
+  padding-right: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  background-color: white;
+  color: #577083;
+}
+.time-2 {
+  top: 40%;
+  padding-bottom: 20px;
+}
+.card-text {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #577083;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+.cardec {
+  align-self: flex-start;
+}
+.btn-book {
+  background-color: #36b5cd;
+  color: #ffffff;
+  align-self: flex-start;
+  text-decoration: none;
+  padding: 10px 25px;
+  transition: all 0.5s;
+}
+.price {
+  font-family: "Rubik", sans-serif;
+  color: #36b5cd;
+  font-weight: 600;
+  font-size: 25px;
+}
+.btn-book:hover {
+  color: #ffffff;
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+.from {
+  color: #577083;
+}
+.vid-para {
+  font-family: "Raleway", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-join {
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  text-decoration: none;
+  background-color: rgb(51, 51, 255);
+  color: white;
+  transition: all 0.5s;
+}
+.btn-join:hover {
+  opacity: 0.8;
+  color: white;
+  transition: all 0.5s;
+}
+.info-1 {
+  background-color: #757575;
+}
+.info-2 {
+  background-color: #ededed;
+}
+.info-3 {
+  background-color: #4bd1a0;
+}
+.info-titl {
+  font-family: "Montserrat", sans-serif;
+  color: #4bd1a0;
+  letter-spacing: 2px;
+  line-height: 25px;
+  margin-top: 35px;
+}
+.info-para {
+  margin-top: 10px;
+  color: white;
+  line-height: 22px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.info-para-2 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.info-link {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.info-link-2,
+.info-link-3 {
+  color: black;
+  transition: all 0.5s;
+}
+.info-link:hover {
+  color: #4bd1a0;
+  transition: all 0.5s;
+}
+.why-para {
+  font-family: "Raleway", sans-serif;
+}
+.why-border {
+  border-top: 4px dashed #4bd1a0;
+  margin-top: 30px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+.why-service {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  margin: 2px 150px;
+  line-height: 20px;
+}
+footer {
+  background-color: rgb(54, 181, 205);
   color: white;
 }
+.footer {
+  font-family: "Signika", sans-serif;
+}
+.contact p:nth-of-type(1) {
+  font-weight: 500;
+}
+.call {
+  text-decoration: none;
+}
+.call span:nth-of-type(1) {
+  color: black;
+}
+.phone-number {
+  color: white;
+}
+.hover-footer {
+  transition: all 0.5s;
+}
+.hover-footer:hover {
+  opacity: 0.8;
+}
+.mail {
+  text-decoration: none;
 
-.App-link {
-  color: #61dafb;
+  transition: all 0.3s;
+}
+.mail span {
+  font-size: 18px;
+  color: white;
+}
+.email-input-2 {
+  border: 2px solid #fe6060;
+  width: 150%;
+}
+.email-input-2::placeholder {
+  color: #fe6060;
+}
+.email-input-2:focus {
+  outline: 0;
+}
+.input-2 button {
+  padding: 8px 10px 8px 10px;
+  margin-top: 16px;
+  color: white;
+  margin-left: 80px;
+  font-weight: 500;
+  border: 2px solid #fe6060;
+  background-color: #fe6060;
+}
+.input-2 button:hover {
+  background-color: #fe6060;
+}
+.footer-2 {
+  font-family: "Signika", sans-serif;
+}
+.footer-link {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 130px;
+  color: white;
+  transition: all 0.5s;
+}
+.footer-link:hover {
+  opacity: 0.8;
+  color: white;
+  transition: all 0.5s;
+}
+.copyright {
+  margin-right: 260px;
+  font-size: 25px;
+  color: black;
+  font-weight: 800;
+}
+.meet {
+  font-family: serif;
+  border-bottom: 3px solid black;
+}
+.name {
+  font-family: serif;
+  font-size: 25px;
+  font-family: "Josefin Slab", serif;
+}
+.iit {
+  font-family: "Signika", sans-serif;
+  font-family: 12px;
+}
+.text-join {
+  font-size: 17px;
+}
+.onestep {
+  font-size: 25px;
+}
+.button {
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    rgba(223, 6, 87, 1) 28%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 10px 25px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.button:hover {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 96, 96, 1) 30%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  transition: all 0.5s;
+}
+/* .youthkaksha-rfc {
+  margin-left: auto;
+  margin-right: auto;
+} */
+/* RESPONSIVE */
+@media screen and (max-width: 1199px) {
+  .time {
+    top: 26%;
+  }
+  .time-2 {
+    top: 38%;
+  }
+  .low-price {
+    top: 30%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .links:hover {
+    border-bottom: none;
+  }
+  .gift {
+    width: 45%;
+  }
+  .atoz {
+    width: 60%;
+  }
+  .input button {
+    margin-left: 0;
+  }
+  .email-input {
+    width: 100%;
+  }
+  .email-input-2 {
+    width: 100%;
+  }
+  .third-box {
+    position: inherit;
+  }
+  .third-box-titl {
+    position: inherit;
+  }
+  .triangle {
+    left: 20%;
+  }
+  .time,
+  .time-2 {
+    top: 38%;
+  }
+  .low-price {
+    top: 40%;
+  }
+  #vid {
+    width: 100%;
+  }
+  .vid-para p {
+    padding: 0;
+  }
+  .video {
+    padding-right: 0;
+  }
+  .info-para {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .why-border {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .why-service {
+    margin: 5px 0;
+  }
+  .why-service div {
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .input-2 button {
+    margin-left: 0px;
+  }
+  .input-2 {
+    justify-content: center;
+  }
+  .footer-links {
+    text-align: center;
+  }
+  .footer-link {
+    margin: 0px;
+  }
+  .copyright {
+    margin-right: 0;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 464px) {
+  .para {
+    font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 417px) {
+  .mentorship-titl {
+    font-size: 26px;
+  }
+  .aim-titl {
+    font-size: 28px;
   }
 }
