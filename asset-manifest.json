@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Ranckin-IIT/static/css/main.2d12b678.chunk.css",
+    "main.js": "/Ranckin-IIT/static/js/main.c1982294.chunk.js",
+    "main.js.map": "/Ranckin-IIT/static/js/main.c1982294.chunk.js.map",
+    "runtime-main.js": "/Ranckin-IIT/static/js/runtime-main.8cbed9fa.js",
+    "runtime-main.js.map": "/Ranckin-IIT/static/js/runtime-main.8cbed9fa.js.map",
+    "static/js/2.964489e0.chunk.js": "/Ranckin-IIT/static/js/2.964489e0.chunk.js",
+    "static/js/2.964489e0.chunk.js.map": "/Ranckin-IIT/static/js/2.964489e0.chunk.js.map",
+    "static/js/3.59e148fd.chunk.js": "/Ranckin-IIT/static/js/3.59e148fd.chunk.js",
+    "static/js/3.59e148fd.chunk.js.map": "/Ranckin-IIT/static/js/3.59e148fd.chunk.js.map",
+    "index.html": "/Ranckin-IIT/index.html",
+    "static/css/main.2d12b678.chunk.css.map": "/Ranckin-IIT/static/css/main.2d12b678.chunk.css.map",
+    "static/js/2.964489e0.chunk.js.LICENSE.txt": "/Ranckin-IIT/static/js/2.964489e0.chunk.js.LICENSE.txt",
+    "static/media/bg-text.68bec754.PNG": "/Ranckin-IIT/static/media/bg-text.68bec754.PNG",
+    "static/media/gift.bdb32e61.png": "/Ranckin-IIT/static/media/gift.bdb32e61.png",
+    "static/media/hola.c32ec1fb.mp4": "/Ranckin-IIT/static/media/hola.c32ec1fb.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cbed9fa.js",
+    "static/js/2.964489e0.chunk.js",
+    "static/css/main.2d12b678.chunk.css",
+    "static/js/main.c1982294.chunk.js"
+  ]
+}
