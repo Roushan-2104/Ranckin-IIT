@@ -35,8 +35,12 @@ export default function Navbar() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mt-2 text-lg-start text-center">
-                <li className="nav-item d-lg-none d-block">
-                  <Link className="nav-link mx-3 pt-0 log pt-lg-0 pt-3" to="/">
+                <li className="nav-item d-lg-none d-block text-center">
+                  <button
+                    className="nav-link mx-auto pt-0 log pt-lg-0 pt-3 login-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#login"
+                  >
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +58,7 @@ export default function Navbar() {
                       </svg>
                     </span>
                     <span className="mx-2 text-primary log-text">Log In</span>
-                  </Link>
+                  </button>
                 </li>
                 <li className="nav-item">
                   <Link
@@ -89,8 +93,12 @@ export default function Navbar() {
                     Join Us
                   </Link>
                 </li>
-                <li className="nav-item d-lg-block d-none">
-                  <Link className="nav-link ms-2 me-1 pt-0 log" to="/">
+                <li className="nav-item d-lg-block d-none text-center">
+                  <button
+                    className="nav-link ms-2 me-1 pt-0 log login-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#login"
+                  >
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -108,12 +116,76 @@ export default function Navbar() {
                       </svg>
                     </span>
                     <span className="mx-2 text-primary log-text">Log In</span>
-                  </Link>
+                  </button>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
+      </div>
+      <div
+        className="modal fade"
+        id="login"
+        tabIndex="-1"
+        aria-labelledby="modal-title"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-fullscreen modal-dialog-centered">
+          <div className="modal-content">
+            <div className="text-end">
+              <button
+                type="button"
+                className="btn-close m-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body text-center">
+              <p
+                className="modal-title display-5 text-center"
+                id="modal-title"
+                style={{ fontWeight: "400", color: "black" }}
+              >
+                Sign Up
+              </p>
+              <p className="fs-5 mt-3">
+                {" "}
+                Already a member?<a href="/">Log In</a>
+              </p>
+              <div>
+                <a href="/" className="bg-primary">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 266.89 266.89"
+                      width="25"
+                      height="25"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            style={{ fill: "#fff" }}
+                            d="M252.16,0H14.73A14.73,14.73,0,0,0,0,14.73V252.16a14.73,14.73,0,0,0,14.73,14.73H142.55V163.57H107.77V123.29h34.82V93.58c0-34.47,21.06-53.24,51.81-53.24a285.41,285.41,0,0,1,31.08,1.59v36H204.15c-16.76,0-20,8-20,19.61v25.72H224l-5.16,40.28H184.15V266.89h68a14.73,14.73,0,0,0,14.73-14.73V14.73A14.73,14.73,0,0,0,252.16,0Z"
+                          ></path>
+                          <path d="M218.84,163.54,224,123.26H184.15V97.54c0-11.66,3.24-19.61,20-19.61h21.33v-36a285.41,285.41,0,0,0-31.08-1.59c-30.75,0-51.81,18.77-51.81,53.24v29.71H107.77v40.28h34.78V266.89h41.6V163.54Z"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <label htmlFor="modal-email" className="form-label">
+                Your Email Address:
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="modal-email"
+                placeholder="e.g. mario@example.com"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <GoToTop />
     </>

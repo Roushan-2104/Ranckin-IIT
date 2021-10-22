@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import GoToTop from "./GoTop";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import "./Navbar";
 
 export default function Home() {
   return (
@@ -688,9 +689,14 @@ export default function Home() {
                 just by login
               </p>
               <p className="mt-4 pt-3">
-                <Link to="/" className="info-link info-link-2">
+                <a
+                  href="https://drive.google.com/drive/folders/1hQDqm1ruVT3bboXlUVI883_8bJX6HgdI"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="info-link info-link-2"
+                >
                   Get it &#62;
-                </Link>
+                </a>
               </p>
             </div>
           </div>
